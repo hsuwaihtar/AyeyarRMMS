@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="MPRoot" style="-fx-background-color: #ebf1f5;" stylesheets="@MarketTable.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.GoodPriceController">
+    <AnchorPane fx:id="MPModal" prefHeight="541.0" prefWidth="857.0" style="-fx-border-width: 2; -fx-background-color: #ebf1f5;">
+        <children>
+            <Label alignment="CENTER_LEFT" contentDisplay="CENTER" layoutY="20.0" prefHeight="17.0" prefWidth="857.0" style="-fx-font-size: 22; -fx-font-weight: bold; -fx-text-fill: black;" text="Market Price" />
+            <TableView fx:id="priceTable" layoutY="114.0" prefHeight="421.0" prefWidth="857.0" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="colNo" prefWidth="36.00002920627594" text="No" />
+                    <TableColumn fx:id="colType" prefWidth="177.33327865600586" text="Rice Type" />
+                    <TableColumn fx:id="colPrice" prefWidth="126.66670227050781" text="Price per bag" />
+                    <TableColumn fx:id="colCreated" prefWidth="77.3333740234375" text="Created" />
+                    <TableColumn fx:id="colCreatedBy" prefWidth="91.99996948242188" text="Created By" />
+                    <TableColumn fx:id="colUpdated" prefWidth="93.33331298828125" text="Updated" />
+                    <TableColumn fx:id="colUpdatedBy" prefWidth="102.00006103515625" text="Updated By" />
+                    <TableColumn fx:id="colAction" prefWidth="146.6666259765625" text="Action" />
+                </columns>
+            </TableView>
+
+            <Button layoutX="779.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleAddNew" prefHeight="25.0" prefWidth="77.0" styleClass="NewBtn" text="Add New" />
+            <ComboBox fx:id="typeCombo" focusTraversable="false" layoutX="622.0" layoutY="85.0" prefWidth="150.0" />
+        </children>
+    </AnchorPane>
+</AnchorPane>

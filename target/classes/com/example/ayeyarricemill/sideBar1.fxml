@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<!--6f64bb-->
+
+<AnchorPane prefHeight="636.0" prefWidth="222.0" style="-fx-background-color: #153b90;" stylesheets="@design.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.sideBar1Controller">
+    <children>
+        <VBox layoutY="20.0" prefWidth="222.0" spacing="0">
+            <children>
+                <Label opacity="0.75" style="-fx-text-fill: white;" text="MAIN">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="34.0" />
+                    </VBox.margin>
+                </Label>
+
+                <HBox fx:id="hbHome" onMouseClicked="#handleHomeClick" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="HOME" size="20" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="35.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Home">
+                            <HBox.margin>
+                                <Insets left="10.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <VBox>
+                    <children>
+                        <HBox onMouseClicked="#toggleMillingMenu" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                            <children>
+                                <FontAwesomeIconView glyphName="SHOPPING_CART" size="20" styleClass="glyphIcon">
+                                    <HBox.margin>
+                                        <Insets left="35.0" top="7.0" />
+                                    </HBox.margin>
+                                </FontAwesomeIconView>
+                                <Label styleClass="sideText" text="Paddy Purchase">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <VBox fx:id="millingSubMenu" managed="false" visible="false">
+                            <children>
+                                <HBox fx:id="hdPaddyReg" onMouseClicked="#paddyregister" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="Register">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="activePaddyList" onMouseClicked="#paddyList" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="LIST" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="List">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <VBox>
+                    <children>
+                        <HBox onMouseClicked="#toggleMillingMenu1" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                            <children>
+                                <FontAwesomeIconView glyphName="COGS" size="20" styleClass="glyphIcon">
+                                    <HBox.margin>
+                                        <Insets left="35.0" top="7.0" />
+                                    </HBox.margin>
+                                </FontAwesomeIconView>
+                                <Label styleClass="sideText" text="Milling">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <VBox fx:id="millingSubMenu1" managed="false" visible="false">
+                            <children>
+                                <HBox fx:id="activeMillReg" onMouseClicked="#millingregister" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="Register">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="activeMillList" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="LIST" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="List">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <VBox>
+                    <children>
+                        <HBox onMouseClicked="#toggleMillingMenu2" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                            <children>
+                                <FontAwesomeIconView glyphName="SHOPPING_BAG" size="20" styleClass="glyphIcon">
+                                    <HBox.margin>
+                                        <Insets left="35.0" top="7.0" />
+                                    </HBox.margin>
+                                </FontAwesomeIconView>
+                                <Label styleClass="sideText" text="Rice Sales">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <VBox fx:id="millingSubMenu2" managed="false" visible="false">
+                            <children>
+                                <HBox fx:id="activeRiceReg" onMouseClicked="#ricesaleregister" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="Register">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="activeRiceList" onMouseClicked="#salesRecord" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="LIST" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="List">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <HBox fx:id="activeInventory" onMouseClicked="#clickInventory" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="INSTITUTION" size="20" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="35.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Inventory">
+                            <HBox.margin>
+                                <Insets left="10.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <VBox>
+                    <children>
+                        <HBox onMouseClicked="#toggleMillingMenu3" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                            <children>
+                                <FontAwesomeIconView glyphName="LINE_CHART" size="20" styleClass="glyphIcon">
+                                    <HBox.margin>
+                                        <Insets left="35.0" top="7.0" />
+                                    </HBox.margin>
+                                </FontAwesomeIconView>
+                                <Label styleClass="sideText" text="Market Price">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+
+                        <VBox fx:id="millingSubMenu3" managed="false" visible="false">
+                            <children>
+                                <HBox fx:id="activeGoodPrice" onMouseClicked="#mkgoodprice" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="PRODUCT_HUNT" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="Goods">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="activeRawPrice" onMouseClicked="#mkrawprice" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                    <children>
+                                        <FontAwesomeIconView glyphName="PAGELINES" size="15" styleClass="glyphIcon">
+                                            <HBox.margin>
+                                                <Insets left="60.0" top="8.0" />
+                                            </HBox.margin>
+                                        </FontAwesomeIconView>
+                                        <Label style="-fx-font-size: 15;" styleClass="sideText" text="Raw">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <!--                <HBox prefHeight="40.0" prefWidth="222.0" onMouseClicked="#mkprice" styleClass="sideBarItem">-->
+                <!--                    <children>-->
+                <!--                        <FontAwesomeIconView glyphName="LINE_CHART" size="20" styleClass="glyphIcon">-->
+                <!--                            <HBox.margin>-->
+                <!--                                <Insets left="35.0" top="7.0" />-->
+                <!--                            </HBox.margin>-->
+                <!--                        </FontAwesomeIconView>-->
+                <!--                        <Label styleClass="sideText" text="Market Price">-->
+                <!--                            <HBox.margin>-->
+                <!--                                <Insets left="10.0" top="3.0" />-->
+                <!--                            </HBox.margin>-->
+                <!--                        </Label>-->
+                <!--                    </children>-->
+                <!--                </HBox>-->
+
+                <HBox prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="LIST_ALT" size="20" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="35.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Finance">
+                            <HBox.margin>
+                                <Insets left="10.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <HBox prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="BAR_CHART" size="20" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="35.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Report">
+                            <HBox.margin>
+                                <Insets left="10.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <VBox alignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                    </VBox.margin>
+                    <Line endX="100.0" opacity="0.3" startX="-100.0" stroke="WHITE" strokeWidth="0.5" />
+                </VBox>
+
+                <Label opacity="0.75" style="-fx-text-fill: white;" text="SUPPORT">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="34.0" />
+                    </VBox.margin>
+                </Label>
+
+                <HBox fx:id="activeSettings" onMouseClicked="#clickSettings" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="GEAR" size="20" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="35.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Settings">
+                            <HBox.margin>
+                                <Insets left="10.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <HBox fx:id="activeManagerList" onMouseClicked="#clickManagerList" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="MALE" size="22" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="37.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Manager">
+                            <HBox.margin>
+                                <Insets left="12.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+                <HBox onMouseClicked="#logout" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                    <children>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="20" styleClass="glyphIcon">
+                            <HBox.margin>
+                                <Insets left="35.0" top="7.0" />
+                            </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label styleClass="sideText" text="Log out">
+                            <HBox.margin>
+                                <Insets left="10.0" top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

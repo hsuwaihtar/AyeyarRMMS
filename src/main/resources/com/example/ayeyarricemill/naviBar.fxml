@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="87.0" prefWidth="1000.0" style="-fx-border-color: #FFFFF2; -fx-background-color: #ffffff; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.naviBarController">
+    <children>
+
+        <ImageView fitHeight="70.0" fitWidth="80.0" layoutX="14.0" layoutY="10.0" onMouseClicked="#imgHome" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/Logo3.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="83.0" layoutY="21.0" onMouseClicked="#textHome" prefHeight="17.0" prefWidth="235.0" style="-fx-font-weight: bold; -fx-font-size: 31; -fx-text-fill: #1c2e4a;" text="AyeYar RMMS" />
+        <HBox alignment="CENTER_RIGHT" layoutX="500.0" layoutY="10.0" spacing="15.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <VBox alignment="CENTER_RIGHT">
+                    <children>
+                        <Label fx:id="day" style="-fx-font-size: 13; -fx-font-weight: bold;" text="Sunday" />
+                        <Label fx:id="dateCount" style="-fx-font-size: 13; -fx-font-weight: bold; -fx-text-fill: blue;" text="11/01/2026" />
+                    </children>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </VBox>
+
+                <FontAwesomeIconView fill="#03045e" glyphName="USER_CIRCLE" size="40" />
+
+                <VBox alignment="CENTER">
+                    <children>
+                        <Label fx:id="userNameLabel" style="-fx-font-weight: bold; -fx-font-size: 15;" text="User Name" />
+                        <Label fx:id="userRoleLabel" style="-fx-font-weight: bold; -fx-text-fill: #e56353; -fx-font-size: 12;" text="ROLE" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

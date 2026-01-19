@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane stylesheets="@tabledesign.css" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ayeyarricemill.InventoryMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox spacing="20" style="-fx-padding: 30; -fx-background-color: #f4f4f4;">
+        <children>
+            <Label text="Inventory Table" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+            <TableView fx:id="inventoryTable" prefHeight="400.0" prefWidth="600.0">
+                <columns>
+                    <TableColumn fx:id="colItemName" prefWidth="150.0" text="Name" />
+                    <TableColumn fx:id="colCategory" prefWidth="120.0" text="Type" />
+                    <TableColumn fx:id="colQuantity" prefWidth="100.0" text="Quantity" />
+                    <TableColumn fx:id="colDate" prefWidth="130.0" text="Date" />
+                    <TableColumn fx:id="colAction" prefWidth="100.0" text="Action" />
+                </columns>
+            </TableView>
+        </children>
+    </VBox>
+</AnchorPane>

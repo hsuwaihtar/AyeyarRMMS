@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="VoucherRoot" prefHeight="650.0" prefWidth="1070.0" style="-fx-background-color: #ebf1f5;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.PaddyVoucherController">
+    <children>
+        <AnchorPane fx:id="printableArea" layoutX="166.0" layoutY="13.0" prefHeight="586.0" prefWidth="758.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="343.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/Logo3.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="310.0" layoutY="47.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #153b90;" text="Ayeyar Rice Mill" />
+                <Label layoutX="216.0" layoutY="71.0" style="-fx-font-size: 16;" text="Industrial Zone, Pathein, Ayeyarwaddy Region" />
+                <Label layoutX="319.0" layoutY="94.0" style="-fx-font-size: 15;" text="Tel: 09-699363666" />
+                <Label layoutX="63.0" layoutY="131.0" style="-fx-font-size: 15;" text="Supplier Name:" />
+                <Label layoutX="63.0" layoutY="156.0" style="-fx-font-size: 15;" text="Paddy Variety:" />
+                <Label fx:id="lblSupplierName" layoutX="173.0" layoutY="131.0" style="-fx-font-size: 15;" text="Ko Min Khant" />
+                <Label fx:id="lblVariety" layoutX="173.0" layoutY="156.0" style="-fx-font-size: 15;" text="Paw San" />
+                <Label layoutX="540.0" layoutY="131.0" style="-fx-font-size: 15;" text="Phone:" />
+                <Label layoutX="540.0" layoutY="156.0" style="-fx-font-size: 15;" text="Date:" />
+                <Label fx:id="lblPhone" layoutX="593.0" layoutY="131.0" style="-fx-font-size: 15;" text="09-660575702" />
+                <Label fx:id="lblDate" layoutX="593.0" layoutY="156.0" style="-fx-font-size: 15;" text="9/1/2026" />
+                <Line endX="625.4000244140625" layoutX="129.0" layoutY="184.0" startX="-128.99998474121094" style="-fx-stroke: #e2e9f1;" />
+                <Label layoutX="65.0" layoutY="185.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Weight Calculation" />
+                <Label layoutX="66.0" layoutY="217.0" style="-fx-font-size: 15;" text="Total Weight:" />
+                <Label layoutX="65.0" layoutY="249.0" style="-fx-font-size: 15;" text="Moisture Deduction" />
+                <Label fx:id="lblTotalWeight" layoutX="441.0" layoutY="217.0" style="-fx-font-size: 15;" text="1000 Tins" />
+                <Label fx:id="lblMoistureCut" layoutX="442.0" layoutY="249.0" style="-fx-font-size: 15; -fx-text-fill: red;" text="-15 Tins" />
+                <Label layoutX="65.0" layoutY="282.0" style="-fx-font-size: 15;" text="Impurity Deduction " />
+                <Label fx:id="lblImpurityCut" layoutX="442.0" layoutY="282.0" style="-fx-font-size: 15; -fx-text-fill: red;" text="-10 Tins" />
+                <Label layoutX="65.0" layoutY="368.0" style="-fx-font-size: 15;" text="Base Price Per Tin :" />
+                <Label layoutX="66.0" layoutY="399.0" prefHeight="22.0" prefWidth="191.0" style="-fx-font-size: 15;" text="Yellow/Damaged Deduction" />
+                <Label layoutX="66.0" layoutY="336.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Price Calculation" />
+                <Label fx:id="lblBasePrice" layoutX="442.0" layoutY="368.0" style="-fx-font-size: 15;" text="10000 MMK" />
+                <Label fx:id="lblYellowCut" layoutX="443.0" layoutY="400.0" style="-fx-font-size: 15; -fx-text-fill: red;" text="-500 MMK" />
+                <Label layoutX="66.0" layoutY="425.0" style="-fx-font-size: 15;" text="Net Price:" />
+                <Label fx:id="lblNetPrice" layoutX="443.0" layoutY="425.0" style="-fx-font-size: 15;" text="9500 MMK" />
+                <Label layoutX="66.0" layoutY="310.0" style="-fx-font-size: 15;" text="Net Weight:" />
+                <Label fx:id="lblNetWeight" layoutX="441.0" layoutY="310.0" style="-fx-font-size: 15;" text="975 Tins" />
+                <Line endX="616.0000610351562" layoutX="140.0" layoutY="307.0" startX="-140.00001525878906" style="-fx-stroke: #e2e9f1;" />
+                <Label layoutX="67.0" layoutY="451.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Grand Total = Net Weight x Net Price" />
+                <Label fx:id="lblGrandTotal" layoutX="437.0" layoutY="448.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #197e3b;" text="9262500 " />
+                <Label layoutX="521.0" layoutY="449.0" style="-fx-font-size: 19; -fx-font-weight: bold; -fx-text-fill: #197e3b;" text="MMK" />
+                <Line endX="616.0000610351562" layoutX="140.0" layoutY="335.0" startX="-140.00001525878906" style="-fx-stroke: #e2e9f1;" />
+                <Line endX="616.0000610351562" layoutX="140.0" layoutY="421.0" startX="-140.00001525878906" style="-fx-stroke: #e2e9f1;" />
+                <Line endX="616.0000610351562" layoutX="139.0" layoutY="450.0" startX="-140.00001525878906" style="-fx-stroke: #e2e9f1;" />
+                <Label fx:id="lblSignPurchaser" alignment="CENTER" layoutX="540.0" layoutY="539.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #4d4e50;" text="Hsu Wai Htar" />
+                <Label layoutX="550.0" layoutY="559.0" style="-fx-font-size: 15;" text="Purchaser" />
+                <Label fx:id="lblSignSupplier" alignment="CENTER" layoutX="68.0" layoutY="539.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #4d4e50;" text="Ko Min Khant" />
+                <Label layoutX="79.0" layoutY="559.0" style="-fx-font-size: 15;" text="Supplier" />
+                <Line endX="616.0000610351562" layoutX="138.0" layoutY="488.0" startX="-140.00001525878906" style="-fx-stroke: #e5aab9;" />
+            <Label fx:id="moiDe" layoutX="198.0" layoutY="250.0" style="-fx-font-size: 15;" text="(16.5%) :" />
+            <Label fx:id="impuriDe" layoutX="195.0" layoutY="283.0" style="-fx-font-size: 15;" text="(16.5%):" />
+            <Label fx:id="yeDe" layoutX="254.0" layoutY="400.0" style="-fx-font-size: 15;" text="(16.5%):" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="btnPrint" focusTraversable="false" layoutX="963.0" layoutY="650.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #4478e5; -fx-cursor: hand; -fx-text-fill: #ffffff;" text="Print" />
+        <Button fx:id="btnBack" focusTraversable="false" layoutX="265.0" layoutY="650.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #4478e5; -fx-cursor: hand; -fx-text-fill: #ffffff;" text="Back">
+            <graphic>
+                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="12" strokeWidth="0.5" text="" />
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

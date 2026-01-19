@@ -1,0 +1,44 @@
+/* Table တစ်ခုလုံးရဲ့ Background ကို ဖျောက်မယ် */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Header (အပေါ်ဆုံးတန်း) ကို အရောင်ပြောင်းမယ် */
+.table-view .column-header-background {
+    -fx-background-color: #6f64bb; /* ကျောင်းသား Sidebar အရောင်နဲ့ ကိုက်အောင် */
+    -fx-background-radius: 10 10 0 0; /* အပေါ်ထောင့်လေးတွေကို ဝိုင်းမယ် */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 45px; /* Header ကို အမြင့်မြှင့်မယ် */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* Header စာသားကို အဖြူရောင်ပြောင်းမယ် */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Table Row (စာသားတန်းများ) ပုံစံသွင်းခြင်း */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0; /* လိုင်းလေးတွေ ပေါ်အောင် */
+    -fx-padding: 10px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9fb; /* တစ်တန်းကျော် အရောင်ဖျော့လေး ပေးမယ် */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eceaff; /* Mouse တင်ရင် အရောင်ပြောင်းမယ် */
+}
+
+/* Cell ထဲက စာသားများကို ပြင်ဆင်ခြင်း */
+.table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: CENTER_LEFT;
+}

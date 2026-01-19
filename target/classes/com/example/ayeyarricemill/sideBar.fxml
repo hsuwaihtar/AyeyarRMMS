@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+
+<!--#344f49 #7c6ea9 #6f64bb 7185a8-->
+
+<AnchorPane prefHeight="636.0" prefWidth="222.0" style="-fx-background-color: #6f64bb;" stylesheets="@design.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.sideBarController">
+    <children>
+        <HBox layoutY="50.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="HOME" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Home">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="90.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="SHOPPING_CART" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="181.0" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Paddy Purchase">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="130.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="COGS" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Milling">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="170.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="SHOPPING_BAG" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Rice Sales">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="210.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="INSTITUTION" size="20" styleClass="glyphIcon" text="">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Inventory">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="290.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="LIST_ALT" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Finance">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutX="1.0" layoutY="330.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="BAR_CHART" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Report">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <Line endX="108.99998474121094" layoutX="110.0" layoutY="370.0" opacity="0.3" startX="-107.9999771118164" strokeWidth="0.5" />
+        <HBox layoutX="1.0" layoutY="400.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="GEAR" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Settings">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <Label layoutX="34.0" layoutY="20.0" opacity="0.75" style="-fx-text-fill: white;" text="MAIN" />
+        <Label layoutX="34.0" layoutY="380.0" opacity="0.75" style="-fx-text-fill: white;" text="SUPPORT" />
+        <HBox layoutX="1.0" layoutY="440.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="SIGN_OUT" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Log out">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="250.0" prefHeight="36.0" prefWidth="222.0" styleClass="sideBarItem">
+            <children>
+                <FontAwesomeIconView glyphName="LINE_CHART" size="20" styleClass="glyphIcon">
+                    <HBox.margin>
+                        <Insets left="35.0" top="7.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18; -fx-font-weight: bold;" styleClass="sideText" text="Market Price">
+                    <HBox.margin>
+                        <Insets left="10.0" top="3.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

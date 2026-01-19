@@ -1,0 +1,4 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:   ; /* သင်ကြိုက်နှစ်သက်ရာ အရောင်ပြောင်းပါ */
+}

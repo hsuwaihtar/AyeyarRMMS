@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutY="85.0" prefHeight="150.0" prefWidth="477.0">
+            <children>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Name">
+                            <HBox.margin>
+                                <Insets left="155.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="618.0">
+                    <children>
+                        <Label prefHeight="20.0" prefWidth="54.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Address">
+                            <HBox.margin>
+                                <Insets left="140.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Phone">
+                            <HBox.margin>
+                                <Insets left="152.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-radius: 5; -fx-border-color: darkblue;">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label layoutX="76.0" layoutY="57.0" opacity="0.5" prefHeight="27.0" prefWidth="102.0" style="-fx-font-size: 18;" text="Contact Info" />
+        <Label layoutX="76.0" layoutY="252.0" opacity="0.5" style="-fx-font-size: 18;" text="Product Info" />
+        <VBox layoutY="293.0" prefHeight="300.0" prefWidth="637.0">
+            <children>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label prefHeight="5.0" prefWidth="80.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Paddy Type">
+                            <HBox.margin>
+                                <Insets left="114.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField focusTraversable="false" style="-fx-background-color: transparent;" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label prefHeight="20.0" prefWidth="128.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Number of pounds">
+                            <HBox.margin>
+                                <Insets left="66.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0" />
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Moisture">
+                            <HBox.margin>
+                                <Insets left="132.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ComboBox focusTraversable="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="12.0" top="10.0" />
+                            </HBox.margin>
+                        </ComboBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Rice quality">
+                            <HBox.margin>
+                                <Insets left="113.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="12.0" top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Free form impurities">
+                            <HBox.margin>
+                                <Insets left="55.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox layoutX="1.0" layoutY="645.0" prefHeight="150.0" prefWidth="650.0">
+            <children>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Market price">
+                            <HBox.margin>
+                                <Insets left="105.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="12.0" top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Qualtity-adjusted price">
+                            <HBox.margin>
+                                <Insets left="38.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-radius: 5; -fx-border-color: darkblue;">
+                            <HBox.margin>
+                                <Insets left="11.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="650.0">
+                    <children>
+                        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Total Amount">
+                            <HBox.margin>
+                                <Insets left="98.0" top="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField focusTraversable="false" style="-fx-background-color: transparent; -fx-border-color: darkblue; -fx-border-radius: 5;">
+                            <HBox.margin>
+                                <Insets left="11.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label layoutX="76.0" layoutY="607.0" opacity="0.5" style="-fx-font-size: 18;" text="Price and total value" />
+    </children>
+</AnchorPane>

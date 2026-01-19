@@ -1,0 +1,122 @@
+#SignUpRootPane{
+    -fx-background-image: url('./images/Log&SignBG.jpg');
+    -fx-background-size: cover;
+}
+
+#LogRoot{
+    -fx-background-image:url("./images/Log&SignBG.jpg");
+    -fx-background-size: cover;
+
+}
+
+#AniLog{
+    -fx-background-image: url('./images/Log&SignBG.jpg');
+        -fx-background-size: cover;
+}
+
+#myradButton: selected .radio .dot{
+    -fx-background-color: #1a4c79;
+    -fx-background-insets: 0;
+}
+
+#myradButton1: selected .radio .dot{
+    -fx-background-color: #1a4c79;
+    -fx-background-insets: 0;
+}
+
+.sideBarItem{
+    -fx-cursor: hand; /* လက်ညှိုးပုံပြောင်းစေရန် */
+    -fx-padding: 0 0 0 0;
+    -fx-transition: 0.3s;
+}
+
+.sideText{
+    -fx-text-fill: white;
+}
+
+.glyphIcon{
+    -fx-fill: white;
+}
+
+/* Hover အပိုင်း */
+.sideBarItem:hover{
+    -fx-background-color:  #ebf1f5;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2;
+     /* -fx-background-radius: 20px; */
+
+}
+
+.sideBarItem:hover .sideText{
+    -fx-text-fill: #03045e !important;
+}
+
+.sideBarItem:hover .glyphIcon{
+    -fx-fill: #03045e  !important;
+}
+
+.btn1{
+    -fx-cursor: hand; /* လက်ညှိုးပုံပြောင်းစေရန် */
+        -fx-padding: 0 0 0 0;
+        -fx-transition: 0.3s;
+}
+
+.btn1{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+}
+
+.btn1:hover{
+
+    -fx-background-color: #1a4c79;
+    -fx-border-color: #1a4c79 !important;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2;
+     /* -fx-background-radius: 20px; */
+     -fx-text-fill: white !important;
+     -fx-background-radius: 20px;
+
+}
+
+
+.subMenuItem {
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.subMenuItem:hover {
+    -fx-background-color: #ebf1f5;
+}
+
+.subMenuItem:hover .sideText{
+    -fx-text-fill: #03045e !important;
+}
+
+.subMenuItem:hover .glyphIcon{
+    -fx-fill: #03045e !important;
+}
+
+
+
+.sideText {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* လက်ရှိရောက်နေတဲ့ Page အတွက် style */
+.active-menu {
+    -fx-background-color: #ebf1f5 !important;
+    /* -fx-background-radius: 5px; */
+}
+
+.active-menu .sideText {
+    -fx-text-fill: #03045e !important;
+}
+
+.active-menu .glyphIcon {
+    -fx-fill: #03045e !important;
+}

@@ -1,0 +1,95 @@
+.NewBtn{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+}
+
+.NewBtn:hover{
+    -fx-cursor: hand;
+}
+
+
+
+ /* Table တစ်ခုလုံး အတွက် */
+ .table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #FF5030;
+}
+
+/* Header ကိုအရောင်ပြောင်း */
+.table-view .column-header-background {
+    -fx-background-color: #FF5030;
+   /* -fx-background-radius: 10 10 0 0; */
+}
+
+.table-view .column-header, .table-view .filler{
+    -fx-background-color: transparent;
+    -fx-size: 45px; /* Header အမြင့် */
+}
+
+.table-view .column-header{
+    -fx-border-color: white;
+    -fx-border-width: 0 1 0 0;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+
+/* Table Row (စာသားတန်းများ) ပုံစံသွင်းခြင်း */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0; /* လိုင်းလေးတွေ ပေါ်အောင် */
+
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9fb; /* တစ်တန်းကျော် အရောင်ဖျော့လေး ပေးမယ် */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eceaff; /* Mouse တင်ရင် အရောင်ပြောင်းမယ် */
+}
+
+/* Cell ထဲက စာသားများကို ပြင်ဆင်ခြင်း */
+.table-cell {
+    -fx-border-color: orange;
+    -fx-padding: 15 0 10 7;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 13px;
+}
+
+/* Good Price Combox အတွက် css */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: orange;
+    -fx-cursor: hand;
+}
+
+.combo-box:hover {
+    -fx-background-color: white;
+    -fx-border-color: #5a50a0;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #6f64bb;
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z"; /* မြှားခေါင်း ပုံစံ */
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+}
+

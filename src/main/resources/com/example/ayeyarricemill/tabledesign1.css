@@ -1,0 +1,48 @@
+/* Table Header တစ်ခုလုံးရဲ့ Background အရောင်ကို ပြောင်းရန် */
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:   #e56353; /* သင်ကြိုက်နှစ်သက်ရာ အရောင်ပြောင်းပါ */
+}
+
+/* Header ထဲက စာသားအရောင်ကို ပြောင်းရန် */
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* Header စာသားကို အဖြူရောင်ပြောင်းမယ် */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* Table Row (စာသားတန်းများ) ပုံစံသွင်းခြင်း */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0; /* လိုင်းလေးတွေ ပေါ်အောင် */
+    -fx-padding: 10px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9fb; /* တစ်တန်းကျော် အရောင်ဖျော့လေး ပေးမယ် */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eceaff; /* Mouse တင်ရင် အရောင်ပြောင်းမယ် */
+}
+
+/* Cell ထဲက စာသားများကို ပြင်ဆင်ခြင်း */
+.table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.submit: hover{
+    -fx-cursor: hand;
+    -fx-text-fill: white !important;
+    -fx-font-weight: bold !important;
+    -fx-border-radius: 10px;
+    -fx-background-color: #FF6600 !important;
+}

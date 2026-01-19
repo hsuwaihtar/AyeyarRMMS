@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane layoutX="1090.0" layoutY="770.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.PaddyC">
+    <children>
+        <Label layoutX="-748.0" layoutY="-713.0" prefHeight="37.0" prefWidth="205.0"
+               style="-fx-font-size: 30; -fx-font-weight: bold; -fx-background-color: #cff6ff;" text="Paddy Purchase"/>
+        <Label layoutX="-945.0" layoutY="-638.0"
+               style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: #cff6ff;"
+               text="Contact &amp; Product Information"/>
+        <HBox layoutX="-978.0" layoutY="-597.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label style="-fx-font-size: 15;" text="Supplier Name:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="184.0" promptText="Enter supplier name"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-542.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label style="-fx-font-size: 15;" text="Address:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="217.0"
+                           promptText="Enter supplier address"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-487.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label style="-fx-font-size: 15;" text="Phone:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="217.0"
+                           promptText="Enter supplier phone"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-432.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="75.0" style="-fx-font-size: 15;" text="Paddy type:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <ComboBox prefHeight="26.0" prefWidth="197.0"
+                          style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-377.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="143.0" style="-fx-font-size: 15;" text="Number of Pounds:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="184.0"
+                           promptText="Enter the number of pounds"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-322.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="102.0" style="-fx-font-size: 15;" text="Number of Tins:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="184.0"
+                           promptText="Enter the number of tins"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-212.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="62.0" style="-fx-font-size: 15;" text="Moisture:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="184.0" promptText="Enter rice moisture"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-267.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="170.0" style="-fx-font-size: 15;" text="Choose Warehouse:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <ComboBox prefHeight="26.0" prefWidth="197.0"
+                          style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-978.0" layoutY="-157.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="85.0" style="-fx-font-size: 15;" text="Rice qualtity:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="184.0" promptText="Enter rice qualtity"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <Label layoutX="-587.0" layoutY="-638.0"
+               style="-fx-font-size: 18; -fx-font-weight: bold; -fx-background-color: #cff6ff;"
+               text="Price &amp; Calculation"/>
+        <HBox layoutX="-646.0" layoutY="-597.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label style="-fx-font-size: 15;" text="Market Price:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="184.0"
+                           promptText="Enter current rice market price"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-646.0" layoutY="-542.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="45.0" style="-fx-font-size: 15;" text="Grade:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <ComboBox prefHeight="26.0" prefWidth="232.0"
+                          style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <HBox layoutX="-646.0" layoutY="-487.0" prefHeight="37.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label prefHeight="19.0" prefWidth="222.0" style="-fx-font-size: 15;" text="Quality-adjusted price:">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </Label>
+                <Line endX="-100.50564575195312" endY="18.292892456054688" startX="-100.50611877441406">
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0"/>
+                    </HBox.margin>
+                </Line>
+                <TextField focusTraversable="false" prefHeight="26.0" prefWidth="217.0" promptText="Enter the price"
+                           style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7236841917037964" green="0.29148390889167786" blue="0.7164808511734009"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </HBox>
+        <Button layoutX="-646.0" layoutY="-432.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="315.0"
+                style="-fx-background-color: #2196f3; -fx-background-radius: 7;" text="Calculate" textFill="WHITE"/>
+        <VBox alignment="CENTER" layoutX="-646.0" layoutY="-357.0" prefHeight="164.0" prefWidth="315.0"
+              style="-fx-background-color: #cff6ff; -fx-background-radius: 7;">
+            <children>
+                <Label style="-fx-font-size: 20; -fx-background-color: transparent;" text="Total Amount (MMK):"/>
+                <Label layoutX="78.0" layoutY="79.0" style="-fx-font-size: 20; -fx-background-color: transparent;"
+                       text="222222222MMK"/>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.7254902124404907" green="0.29019609093666077" blue="0.7176470756530762"/>
+                    </color>
+                </InnerShadow>
+            </effect>
+        </VBox>
+        <Button layoutX="-646.0" layoutY="-157.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0"
+                style="-fx-background-color: #2196f3; -fx-background-radius: 7;" text="Invoice" textFill="WHITE"/>
+        <Button layoutX="-481.0" layoutY="-157.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0"
+                style="-fx-background-color: #2196f3; -fx-background-radius: 7;" text="Submit" textFill="WHITE"/>
+        <Label layoutX="-978.0" layoutY="-104.0" style="-fx-font-size: 15;" text="Reset" textFill="#260999"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="530.0" prefWidth="940.0" style="-fx-background-color: #ebf1f5;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayeyarricemill.PaddyRegDetailController">
+    <children>
+        <Label layoutX="100.0" layoutY="74.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Weight Calculation" />
+        <Label layoutX="99.0" layoutY="106.0" style="-fx-font-size: 15;" text="Total Weight:" />
+        <Label layoutX="99.0" layoutY="138.0" style="-fx-font-size: 15;" text="Moisture Deduction " />
+        <Label fx:id="lblTotalWeight" layoutX="337.0" layoutY="106.0" style="-fx-font-size: 15;" text="1000 Tins" />
+        <Label fx:id="lblMoistureCut" layoutX="347.0" layoutY="138.0" style="-fx-font-size: 15; -fx-text-fill: red;" text="-15 Tins" />
+        <Label layoutX="99.0" layoutY="169.0" style="-fx-font-size: 15;" text="Impurity Deduction" />
+        <Label fx:id="lblImpurityCut" layoutX="346.0" layoutY="171.0" style="-fx-font-size: 15; -fx-text-fill: red;" text="-10 Tins" />
+        <Label layoutX="99.0" layoutY="203.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #153b90;" text="Net Weight:" />
+        <Label fx:id="lblNetWeight" layoutX="343.0" layoutY="202.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #153b90;" text="975 Tins" />
+        <Line endX="263.79998779296875" layoutX="197.0" layoutY="247.0" startX="-100.0" style="-fx-stroke: orange;" />
+        <AnchorPane layoutX="489.0" layoutY="64.0" prefHeight="366.0" prefWidth="403.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+            <children>
+                <Label layoutX="35.0" layoutY="105.0" style="-fx-font-size: 15;" text="Phone:" />
+                <Label layoutX="35.0" layoutY="14.0" style="-fx-font-size: 15;" text="Date:" />
+                <Label fx:id="lblPhone" layoutX="255.0" layoutY="105.0" style="-fx-font-size: 15;" text="09-660575702" />
+                <Label fx:id="lblDate" layoutX="255.0" layoutY="14.0" style="-fx-font-size: 15;" text="9/1/2026" />
+                <Label layoutX="35.0" layoutY="47.0" style="-fx-font-size: 15;" text="Supplier Name:" />
+                <Label layoutX="35.0" layoutY="153.0" style="-fx-font-size: 15;" text="Paddy Variety:" />
+                <Label fx:id="lblSupplierName" layoutX="255.0" layoutY="47.0" style="-fx-font-size: 15;" text="Ko Min Khant" />
+                <Label fx:id="lblVariety" layoutX="255.0" layoutY="153.0" style="-fx-font-size: 15;" text="Paw San" />
+                <Line endX="296.00006103515625" layoutX="101.0" layoutY="132.0" startX="-100.0" style="-fx-stroke: #e2e9f1;" />
+                <Label layoutX="35.0" layoutY="182.0" style="-fx-font-size: 15;" text="Net Weight:" />
+                <Label fx:id="lblNetWeightBox" layoutX="255.0" layoutY="182.0" style="-fx-font-size: 15;" text="975 Tins" />
+                <Label fx:id="lblNetPriceBox" layoutX="255.0" layoutY="212.0" style="-fx-font-size: 15;" text="9500 MMK" />
+                <Label layoutX="35.0" layoutY="212.0" style="-fx-font-size: 15;" text="Net Price:" />
+                <VBox alignment="CENTER" layoutX="35.0" layoutY="250.0" prefHeight="59.0" prefWidth="335.0" style="-fx-background-color: #f0fff8; -fx-border-color: #2a8d67; -fx-background-radius: 10; -fx-border-radius: 10;">
+                    <children>
+                        <Label style="-fx-font-size: 15; -fx-text-fill: #2a8d67; -fx-font-weight: bold;" text="Grand Total" />
+                        <Label fx:id="lblGrandTotal" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2a8d67;" text="9262500 MMK" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="35.0" layoutY="316.0" prefHeight="36.0" prefWidth="335.0" style="-fx-background-color: #fef5ec; -fx-border-color: #d47742; -fx-background-radius: 10; -fx-border-radius: 10;">
+                    <children>
+                        <Label style="-fx-font-size: 15; -fx-text-fill: #d47742; -fx-font-weight: bold;" text="Store in :" />
+                  <Label fx:id="lblWarehouse" layoutX="97.0" layoutY="17.0" style="-fx-font-size: 15; -fx-text-fill: #d47742; -fx-font-weight: bold;" text="Warehouse A" />
+                    </children>
+                </VBox>
+                <Label layoutX="35.0" layoutY="75.0" style="-fx-font-size: 15;" text="Purchaser :" />
+                <Label fx:id="lblPurchaser" layoutX="255.0" layoutY="75.0" style="-fx-font-size: 15;" text="Ko Min Khant" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="99.0" layoutY="292.0" style="-fx-font-size: 15;" text="Base Price Per Tin :" />
+        <Label layoutX="99.0" layoutY="323.0" prefHeight="22.0" prefWidth="188.0" style="-fx-font-size: 15;" text="Yellow/Damaged Deduction" />
+        <Label layoutX="100.0" layoutY="261.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Price Calculation" />
+        <Label fx:id="lblBasePrice" layoutX="359.0" layoutY="292.0" style="-fx-font-size: 15;" text="10000 MMK" />
+        <Label fx:id="lblQualityCut" layoutX="369.0" layoutY="323.0" style="-fx-font-size: 15; -fx-text-fill: red;" text="-500 MMK" />
+        <Label layoutX="99.0" layoutY="359.0" style="-fx-font-size: 14; -fx-text-fill: #153b90; -fx-font-weight: bold;" text="Net Price:" />
+        <Label fx:id="lblNetPrice" layoutX="370.0" layoutY="359.0" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #153b90;" text="9500 MMK" />
+        <Line endX="263.79998779296875" layoutX="197.0" layoutY="406.0" startX="-100.0" style="-fx-stroke: orange;" />
+        <Button fx:id="btnBack" layoutX="814.0" layoutY="442.0" mnemonicParsing="false" style="-fx-background-color: #4478e5; -fx-text-fill: #ffffff;" text="Back To List" />
+        <Label fx:id="lblMoisture" layoutX="234.0" layoutY="139.0" style="-fx-font-size: 15;" text="(16.5%):" />
+        <Label fx:id="lblImpurity" layoutX="230.0" layoutY="170.0" style="-fx-font-size: 15;" text="(16.5%):" />
+      <Label fx:id="lblYellow" layoutX="287.0" layoutY="323.0" style="-fx-font-size: 15;" text="(16.5%):" />
+    </children>
+</AnchorPane>
