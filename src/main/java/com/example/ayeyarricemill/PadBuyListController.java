@@ -28,6 +28,8 @@ public class PadBuyListController {
     @FXML
     private TableColumn<PaddyPurchase, Number> colNo;
     @FXML
+    private TableColumn<PaddyPurchase,String> colVoucherNo;
+    @FXML
     private TableColumn<PaddyPurchase, String> colDate;
     @FXML
     private TableColumn<PaddyPurchase, String> colSupplier;
@@ -37,6 +39,8 @@ public class PadBuyListController {
     private TableColumn<PaddyPurchase, String> colNetWeight;
     @FXML
     private TableColumn<PaddyPurchase, String> colTotalAmount;
+    @FXML
+    private TableColumn<PaddyPurchase,String> instock;
     @FXML
     private TableColumn<PaddyPurchase, Void> colAction;
 
@@ -54,6 +58,8 @@ public class PadBuyListController {
         // အမှတ်စဉ် (No)
         colNo.setCellValueFactory(data -> new SimpleIntegerProperty(purchaseTable.getItems().indexOf(data.getValue()) + 1));
 
+        colVoucherNo.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getBatchNo()));
+
         // ရက်စွဲ (Date) - Backend field 'purchaseDate' ကို သုံးထားသည်
         colDate.setCellValueFactory(data -> {
             String date = data.getValue().getPurchaseDate();
@@ -68,6 +74,31 @@ public class PadBuyListController {
 
         colNetWeight.setCellValueFactory(data -> new SimpleStringProperty(String.format("%.2f Tins", data.getValue().getNetWeight() != null ? data.getValue().getNetWeight() : 0.0)));
         colTotalAmount.setCellValueFactory(data -> new SimpleStringProperty(String.format("%,.0f MMK", data.getValue().getTotalAmount() != null ? data.getValue().getTotalAmount() : 0.0)));
+
+        instock.setCellValueFactory(data -> {
+            String status = data.getValue().getStatus();
+            // Default ကို Stock လို့ သတ်မှတ်ထားခြင်း
+            return new SimpleStringProperty(status != null ? status : "Stock");
+        });
+
+        // Status အရောင်ခွဲပြခြင်း
+        instock.setCellFactory(column -> new TableCell<>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    setText(item);
+                    if ("Stock".equalsIgnoreCase(item)) {
+                        setStyle("-fx-text-fill: #2a8d67; -fx-font-weight: bold;"); // Stock ဆိုရင် အစိမ်း
+                    } else if ("Milled".equalsIgnoreCase(item)) {
+                        setStyle("-fx-text-fill: #d47742; -fx-font-weight: bold;"); // Milled ဆိုရင် လိမ္မော်ရောင်
+                    }
+                }
+            }
+        });
 
         // Action Button
         colAction.setCellFactory(param -> new TableCell<>() {
@@ -183,6 +214,7 @@ public class PadBuyListController {
         private Double qualityDeduction;
         private Double netPrice;
         private Double totalAmount;
+        private String status; // stock or milled
 
         // Getters
         public String getBatchNo() {
@@ -208,6 +240,7 @@ public class PadBuyListController {
         public String getPaddyType() {
             return paddyType;
         }
+        public String getStatus() {return status;}
         public String getWarehouseId() { return warehouseId; }
 
         public Double getNetWeight() {
