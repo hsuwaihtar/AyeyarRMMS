@@ -10,7 +10,7 @@ import java.io.IOException;
 public class AyeyarRiceMill extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AyeyarRiceMill.class.getResource("AniLogSign.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AyeyarRiceMill.class.getResource("SettingPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("AyeyarRiceMill");
         stage.setScene(scene);
