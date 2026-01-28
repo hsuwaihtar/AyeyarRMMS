@@ -51,7 +51,6 @@
                                 </Label>
                             </children>
                         </HBox>
-
                         <VBox fx:id="millingSubMenu" managed="false" visible="false">
                             <children>
                                 <HBox fx:id="hdPaddyReg" onMouseClicked="#paddyregister" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
@@ -103,7 +102,6 @@
                                 </Label>
                             </children>
                         </HBox>
-
                         <VBox fx:id="millingSubMenu1" managed="false" visible="false">
                             <children>
                                 <HBox fx:id="activeMillReg" onMouseClicked="#millingregister" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
@@ -120,7 +118,7 @@
                                         </Label>
                                     </children>
                                 </HBox>
-                                <HBox fx:id="activeMillList" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
+                                <HBox fx:id="activeMillList" prefHeight="35.0" onMouseClicked="#millingRegList" prefWidth="222.0" styleClass="subMenuItem">
                                     <children>
                                         <FontAwesomeIconView glyphName="LIST" size="15" styleClass="glyphIcon">
                                             <HBox.margin>
@@ -155,7 +153,6 @@
                                 </Label>
                             </children>
                         </HBox>
-
                         <VBox fx:id="millingSubMenu2" managed="false" visible="false">
                             <children>
                                 <HBox fx:id="activeRiceReg" onMouseClicked="#ricesaleregister" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
@@ -222,7 +219,6 @@
                                 </Label>
                             </children>
                         </HBox>
-
                         <VBox fx:id="millingSubMenu3" managed="false" visible="false">
                             <children>
                                 <HBox fx:id="activeGoodPrice" onMouseClicked="#mkgoodprice" prefHeight="35.0" prefWidth="222.0" styleClass="subMenuItem">
@@ -272,8 +268,7 @@
                 <!--                        </Label>-->
                 <!--                    </children>-->
                 <!--                </HBox>-->
-
-                <HBox prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
+                <HBox fx:id="activeFinance" onMouseClicked="#activeFinanceClicked" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
                     <children>
                         <FontAwesomeIconView glyphName="LIST_ALT" size="20" styleClass="glyphIcon">
                             <HBox.margin>
@@ -345,7 +340,6 @@
                         </Label>
                     </children>
                 </HBox>
-
                 <HBox onMouseClicked="#logout" prefHeight="40.0" prefWidth="222.0" styleClass="sideBarItem">
                     <children>
                         <FontAwesomeIconView glyphName="SIGN_OUT" size="20" styleClass="glyphIcon">
